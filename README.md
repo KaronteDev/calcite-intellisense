@@ -1,12 +1,12 @@
 # Calcite Intellisense for VS Code
 
-Esta extensión proporciona autocompletado y sugerencias para los componentes del sistema Calcite Design System en HTML.
+This extension provides autocomplete and suggestions for Calcite Design System components in HTML.
 
-## Instrucciones para instalar localmente
+## Instructions for local installation
 
-1.  Abre Visual Studio Code.
-2.  Ejecuta `View -> Command Palette -> Extensions: Install from VSIX...`.
-3.  Selecciona el archivo `.vsix` generado o ejecuta desde terminal:
+1.  Open Visual Studio Code.
+2.  Run `View -> Command Palette -> Extensions: Install from VSIX...`.
+3.  Select the generated `.vsix` file or run from terminal:
 
 ```
 npm install -g vsce
@@ -14,19 +14,21 @@ vsce package
 code --install-extension calcite-intellisense-1.0.0.vsix
 ```
 
-## Contenido
+## Contents
 
-*   **Snippets:** disponibles para componentes Calcite (`.vscode/calcite.code-snippets`)
-*   **Soporte IntelliSense:** atributos, propiedades y documentación (`custom-data/vscode-data.json`)
+*   **Snippets:** available for Calcite components (`.vscode/calcite.code-snippets`)
+*   **IntelliSense support:** attributes, properties, and documentation (`custom-data/vscode-data.json`)
 
 ---
 
-## Ejecutar desde el entorno de VS Code.
+## Run from the VS Code environment.
 
-### Inicia la depuración
+### Start debugging
 
-1.  Ve a la pestaña "Run and Debug" (Ctrl+Shift+D).
-2.  Elige la configuración llamada "Extensión: Ejecutar".
-3.  Pulsa ▶ "Start Debugging".
+1.  Go to the ‘Run and Debug’ tab (Ctrl+Shift+D).
+2.  Choose the configuration called ‘Extension: Run’.
+3.  Press ▶ ‘Start Debugging’.
 
-Esto abrirá una **nueva ventana de VS Code con tu extensión cargada temporalmente** (modo development host), donde podrás probar los IntelliSense y snippets en archivos .html.
+This will open a **new VS Code window with your extension temporarily loaded** (development host mode), where you can test IntelliSense and snippets in .html files.
+
+Translated with DeepL.com (free version)
