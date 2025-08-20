@@ -1,0 +1,545 @@
+{
+  "Calcite-script": {
+    "prefix": "clt-script",
+    "body": [
+      "<script type='module' src='https://js.arcgis.com/calcite-components/3.1.0/calcite.esm.js'></script>"
+    ],
+    "description": "Añade el enlace a la librería java script"
+  },
+  "Calcite-css": {
+    "prefix": "clt-css",
+    "body": [
+      "<link rel='stylesheet' href='https://js.arcgis.com/${1|4.32|}/esri/themes/${1|light,dark|}/main.css' />"
+    ],
+    "description": "Añade el enlace a la librería java script"
+  },
+  "CalciteAccordion": {
+    "prefix": "clt-accordion",
+    "body": [ 
+      "<calcite-accordion>",
+      "  <calcite-accordion-item description=\"${1|Description|}\" heading=\"${2|Heading|}\" icon-start=\"${3|Icon|}\">",
+      "    ${4|Content goes here|}",
+      "  </calcite-accordion-item>",
+      "</calcite-accordion>"
+    ],
+    "description": "Crea un acordeón utilizando el componente calcite-accordion."
+  },
+  "CalciteAction": {
+    "prefix": "clt-action",
+    "body": [
+      "<calcite-action icon=\"${1|plus,edit,delete,filter|}\" text=\"${2|Action Text|}\" label=\"${3|Action Label|}\"></calcite-action>"
+    ],
+    "description": "Crea una acción utilizando el componente calcite-action."
+  },
+  "CalciteActionBar": {
+    "prefix": "clt-action-bar",
+    "body": [
+      "<calcite-action-bar>",
+      "  <calcite-action icon=\"${1|plus|}\" text=\"${2|Action 1|}\"></calcite-action>",
+      "  <calcite-action icon=\"${3|edit|}\" text=\"${4|Action 2|}\"></calcite-action>",
+      "</calcite-action-bar>"
+    ],
+    "description": "Genera una barra de acciones con el componente calcite-action-bar."
+  },
+  "CalciteActionGroup": {
+    "prefix": "clt-action-group",
+    "body": [
+      "<calcite-action-group>",
+      "  <calcite-action text=\"${1|Action 1|}\" icon=\"${2|plus|}\"></calcite-action>",
+      "  <calcite-action text=\"${3|Action 2|}\" icon=\"${4|edit|}\"></calcite-action>",
+      "</calcite-action-group>"
+    ],
+    "description": "Crea un grupo de acciones utilizando calcite-action-group."
+  },
+  "CalciteActionPad": {
+    "prefix": "clt-action-pad",
+    "body": [
+      "<calcite-action-pad>",
+      "  <calcite-action icon=\"${1|plus|}\" text=\"${2|Action 1|}\"></calcite-action>",
+      "</calcite-action-pad>"
+    ],
+    "description": "Crea un pad de acciones utilizando el componente calcite-action-pad."
+  },
+  "CalciteAlert": {
+    "prefix": "clt-alert",
+    "body": [
+      "<calcite-alert icon=\"${1|information,warning,error|}\" color=\"${2|blue,red,green|}\" duration=\"${3|3000|}\">",
+      "  ${4|Alert message|}",
+      "</calcite-alert>"
+    ],
+    "description": "Genera una alerta con el componente calcite-alert."
+  },
+  "CalciteAvatar": {
+    "prefix": "clt-avatar",
+    "body": [
+      "<calcite-avatar full-name=\"${1|John Doe|}\" thumbnail=\"${2|URL|}\"></calcite-avatar>"
+    ],
+    "description": "Crea un avatar utilizando el componente calcite-avatar."
+  },
+  "CalciteBlock": {
+    "prefix": "clt-block",
+    "body": [
+      "<calcite-block heading=\"${1|Block Heading|}\" collapsible=\"${2|true,false|}\">",
+      "  ${3|Block content|}",
+      "</calcite-block>"
+    ],
+    "description": "Genera un bloque con el componente calcite-block."
+  },
+  "CalciteButton": {
+    "prefix": "clt-button",
+    "body": [
+      "<calcite-button appearance=\"${1|solid,outline,clear|}\" scale=\"${2|s,m,l|}\" color=\"${3|blue,red,green|}\">",
+      "  ${4|Click me!|}",
+      "</calcite-button>"
+    ],
+    "description": "Crea un botón utilizando el componente calcite-button."
+  },
+  "CalciteCard": {
+    "prefix": "clt-card",
+    "body": [
+      "<calcite-card heading=\"${1|Card Heading|}\" description=\"${2|Card Description|}\">",
+      "  ${3|Card Content|}",
+      "</calcite-card>"
+    ],
+    "description": "Genera una tarjeta con el componente calcite-card."
+  },
+  "CalciteCarousel": {
+    "prefix": "clt-carousel",
+    "body": [
+      "<calcite-carousel>",
+      "  <calcite-tile heading=\"${1|Tile 1|}\" description=\"${2|Description 1|}\"></calcite-tile>",
+      "  <calcite-tile heading=\"${3|Tile 2|}\" description=\"${4|Description 2|}\"></calcite-tile>",
+      "</calcite-carousel>"
+    ],
+    "description": "Crea un carrusel utilizando el componente calcite-carousel."
+  },
+  "CalciteCheckbox": {
+    "prefix": "clt-checkbox",
+    "body": [
+      "<calcite-checkbox checked=\"${1|true,false|}\">${2|Label|}</calcite-checkbox>"
+    ],
+    "description": "Genera una casilla de verificación con el componente calcite-checkbox."
+  },
+  "CalciteChip": {
+    "prefix": "clt-chip",
+    "body": [
+      "<calcite-chip value=\"${1|Chip Value|}\" icon=\"${2|layer|}\">${3|Chip Text|}</calcite-chip>"
+    ],
+    "description": "Crea un chip utilizando el componente calcite-chip."
+  },
+  "CalciteColorPicker": {
+    "prefix": "clt-color-picker",
+    "body": [
+      "<calcite-color-picker value=\"${1|#ff0000|}\"></calcite-color-picker>"
+    ],
+    "description": "Crea un selector de color utilizando el componente calcite-color-picker."
+  },
+  "CalciteCombobox": {
+    "prefix": "clt-combobox",
+    "body": [
+      "<calcite-combobox placeholder=\"${1|Select an option|}\">",
+      "  <calcite-combobox-item value=\"${2|Option 1|}\">${3|Option 1|}</calcite-combobox-item>",
+      "  <calcite-combobox-item value=\"${4|Option 2|}\">${5|Option 2|}</calcite-combobox-item>",
+      "</calcite-combobox>"
+    ],
+    "description": "Crea un combobox utilizando el componente calcite-combobox."
+  },
+  "CalciteDatePicker": {
+    "prefix": "clt-date-picker",
+    "body": [
+      "<calcite-date-picker value=\"${1|YYYY-MM-DD|}\"></calcite-date-picker>"
+    ],
+    "description": "Crea un selector de fecha utilizando el componente calcite-date-picker."
+  },
+  "CalciteDialog": {
+    "prefix": "clt-dialog",
+    "body": [
+      "<calcite-dialog aria-label=\"${1|Dialog Label|}\" active=\"${2|true,false|}\">",
+      "  <h3 slot=\"header\">${3|Dialog Header|}</h3>",
+      "  <div slot=\"content\">${4|Dialog Content|}</div>",
+      "  <calcite-button slot=\"primary\">${5|Confirm|}</calcite-button>",
+      "  <calcite-button slot=\"secondary\">${6|Cancel|}</calcite-button>",
+      "</calcite-dialog>"
+    ],
+    "description": "Genera un diálogo utilizando el componente calcite-dialog."
+  },
+  "CalciteDropdown": {
+    "prefix": "clt-dropdown",
+    "body": [
+      "<calcite-dropdown>",
+      "  <calcite-button slot=\"dropdown-trigger\">${1|Open Dropdown|}</calcite-button>",
+      "  <calcite-dropdown-group group-title=\"${2|Group Title|}\">",
+      "    <calcite-dropdown-item>${3|Item 1|}</calcite-dropdown-item>",
+      "    <calcite-dropdown-item>${4|Item 2|}</calcite-dropdown-item>",
+      "  </calcite-dropdown-group>",
+      "</calcite-dropdown>"
+    ],
+    "description": "Genera un menú desplegable con el componente calcite-dropdown."
+  },
+  "CalciteFab": {
+    "prefix": "clt-fab",
+    "body": [
+      "<calcite-fab icon=\"${1|plus,edit,delete|}\" label=\"${2|Floating Action Button|}\"></calcite-fab>"
+    ],
+    "description": "Crea un botón de acción flotante utilizando el componente calcite-fab."
+  },
+  "CalciteFilter": {
+    "prefix": "clt-filter",
+    "body": [
+      "<calcite-filter placeholder=\"${1|Search...|}\">",
+      "  <calcite-list>",
+      "    <calcite-list-item label=\"${2|Item 1|}\" description=\"${3|Description 1|}\"></calcite-list-item>",
+      "    <calcite-list-item label=\"${4|Item 2|}\" description=\"${5|Description 2|}\"></calcite-list-item>",
+      "  </calcite-list>",
+      "</calcite-filter>"
+    ],
+    "description": "Crea un filtro utilizando el componente calcite-filter."
+  },
+  "CalciteFlow": {
+    "prefix": "clt-flow",
+    "body": [
+      "<calcite-flow>",
+      "  <calcite-panel heading=\"${1|Panel Heading|}\">${2|Panel Content|}</calcite-panel>",
+      "</calcite-flow>"
+    ],
+    "description": "Genera un flujo con el componente calcite-flow."
+  },
+  "CalciteFlowItem": {
+    "prefix": "clt-flow-item",
+    "body": [
+      "<calcite-flow-item heading=\"${1|Flow Item Heading|}\" description=\"${2|Flow Item Description|}\">",
+      "  ${3|Flow Item Content|}",
+      "</calcite-flow-item>"
+    ],
+    "description": "Crea un elemento de flujo utilizando calcite-flow-item."
+  },
+  "CalciteIcon": {
+    "prefix": "clt-icon",
+    "body": [
+      "<calcite-icon icon=\"${1|home,layer,map|}\" scale=\"${2|s,m,l|}\" color=\"${3|blue,red,green|}\"></calcite-icon>"
+    ],
+    "description": "Genera un ícono utilizando el componente calcite-icon."
+  },
+  "CalciteInlineEditable": {
+    "prefix": "clt-inline-editable",
+    "body": [
+      "<calcite-inline-editable controls=\"${1|true,false|}\" editing-enabled=\"${2|true,false|}\">",
+      "  ${3|Editable content|}",
+      "</calcite-inline-editable>"
+    ],
+    "description": "Genera un campo editable en línea con el componente calcite-inline-editable."
+  },
+  "CalciteInput": {
+    "prefix": "clt-input",
+    "body": [
+      "<calcite-input type=\"${1|text,number,password|}\" label=\"${2|Your Label|}\" placeholder=\"${3|Placeholder text|}\" value=\"${4}\">",
+      "</calcite-input>"
+    ],
+    "description": "Genera un campo de entrada con el componente calcite-input."
+  },
+  "CalciteInputMessage": {
+    "prefix": "clt-input-message",
+    "body": [
+      "<calcite-input-message active=\"${1|true,false|}\" type=\"${2|default,success,error|}\">",
+      "  ${3|Input Message Content|}",
+      "</calcite-input-message>"
+    ],
+    "description": "Genera un mensaje de entrada con el componente calcite-input-message."
+  },
+  "CalciteLabel": {
+    "prefix": "clt-label",
+    "body": [
+      "<calcite-label layout=\"${1|default,inline|}\">",
+      "  ${2|Label Text|}",
+      "  <calcite-input type=\"${3|text,number|}\" value=\"${4|Value|}\"></calcite-input>",
+      "</calcite-label>"
+    ],
+    "description": "Genera una etiqueta con el componente calcite-label."
+  },
+  "CalciteLink": {
+    "prefix": "clt-link",
+    "body": [
+      "<calcite-link href=\"${1|https://example.com|}\" target=\"${2|_blank,_self|}\">${3|Link Text|}</calcite-link>"
+    ],
+    "description": "Genera un enlace con el componente calcite-link."
+  },
+  "CalciteList": {
+    "prefix": "clt-list",
+    "body": [
+      "<calcite-list>",
+      "  <calcite-list-item label=\"${1|Item 1|}\" description=\"${2|Description 1|}\"></calcite-list-item>",
+      "  <calcite-list-item label=\"${3|Item 2|}\" description=\"${4|Description 2|}\"></calcite-list-item>",
+      "</calcite-list>"
+    ],
+    "description": "Genera una lista utilizando el componente calcite-list."
+  },
+  "CalciteLoader": {
+    "prefix": "clt-loader",
+    "body": [
+      "<calcite-loader active=\"${1|true,false|}\" text=\"${2|Loading...|}\"></calcite-loader>"
+    ],
+    "description": "Genera un indicador de carga con el componente calcite-loader."
+  },
+  "CalciteMenu": {
+    "prefix": "clt-menu",
+    "body": [
+      "<calcite-menu>",
+      "  <calcite-menu-item>${1|Menu Item 1|}</calcite-menu-item>",
+      "  <calcite-menu-item>${2|Menu Item 2|}</calcite-menu-item>",
+      "</calcite-menu>"
+    ],
+    "description": "Crea un menú utilizando el componente calcite-menu."
+  },
+  "CalciteMeter": {
+    "prefix": "clt-meter",
+    "body": [
+      "<calcite-meter value=\"${1|50|}\" min=\"${2|0|}\" max=\"${3|100|}\"></calcite-meter>"
+    ],
+    "description": "Crea un medidor utilizando el componente calcite-meter."
+  },
+  "CalciteModal": {
+    "prefix": "clt-modal",
+    "body": [
+      "<calcite-modal aria-label=\"${1|Modal label|}\">",
+      "  <h3 slot=\"header\">${2|Header Title|}</h3>",
+      "  <div slot=\"content\">${3|Content goes here|}</div>",
+      "  <calcite-button slot=\"primary\">${4|Confirm|}</calcite-button>",
+      "  <calcite-button slot=\"secondary\">${5|Cancel|}</calcite-button>",
+      "</calcite-modal>"
+    ],
+    "description": "Crea un modal utilizando el componente calcite-modal."
+  },
+  "CalciteNavigation": {
+    "prefix": "clt-navigation",
+    "body": [
+      "<calcite-navigation>",
+      "  <calcite-navigation-item href=\"${1|#|}\" label=\"${2|Nav Item 1|}\"></calcite-navigation-item>",
+      "  <calcite-navigation-item href=\"${3|#|}\" label=\"${4|Nav Item 2|}\"></calcite-navigation-item>",
+      "</calcite-navigation>"
+    ],
+    "description": "Crea un componente de navegación utilizando calcite-navigation."
+  },
+  "CalciteNotice": {
+    "prefix": "clt-notice",
+    "body": [
+      "<calcite-notice icon=\"${1|information,warning,error|}\" color=\"${2|blue,red,green|}\" active=\"${3|true,false|}\">",
+      "  <div slot=\"title\">${4|Notice Title|}</div>",
+      "  <div slot=\"message\">${5|Notice Message|}</div>",
+      "</calcite-notice>"
+    ],
+    "description": "Crea una notificación utilizando el componente calcite-notice."
+  },
+  "CalcitePagination": {
+    "prefix": "clt-pagination",
+    "body": [
+      "<calcite-pagination start=\"${1|1|}\" total=\"${2|100|}\" num=\"${3|10|}\"></calcite-pagination>"
+    ],
+    "description": "Genera un componente de paginación con calcite-pagination."
+  },
+  "CalcitePanel": {
+    "prefix": "clt-panel",
+    "body": [
+      "<calcite-panel heading=\"${1|Panel Title|}\" summary=\"${2|Panel Summary|}\">",
+      "  ${3|Panel content|}",
+      "</calcite-panel>"
+    ],
+    "description": "Genera un panel con el componente calcite-panel."
+  },
+  "CalcitePopover": {
+    "prefix": "clt-popover",
+    "body": [
+      "<calcite-popover reference-element=\"${1|element-id|}\" placement=\"${2|top,bottom,left,right|}\" overlay-positioning=\"${3|absolute,relative|}\">",
+      "  ${4|Popover content|}",
+      "</calcite-popover>"
+    ],
+    "description": "Crea un popover utilizando el componente calcite-popover."
+  },
+  "CalciteProgress": {
+    "prefix": "clt-progress",
+    "body": [
+      "<calcite-progress value=\"${1|0.5|}\" text=\"${2|Loading...|}\"></calcite-progress>"
+    ],
+    "description": "Genera un indicador de progreso con el componente calcite-progress."
+  },
+  "CalciteRadioButton": {
+    "prefix": "clt-radio-button",
+    "body": [
+      "<calcite-radio-button name=\"${1|group-name|}\" value=\"${2|Option 1|}\" checked=\"${3|true,false|}\">${4|Label|}</calcite-radio-button>"
+    ],
+    "description": "Crea un botón de opción utilizando el componente calcite-radio-button."
+  },
+  "CalciteRadioButtonGroup": {
+    "prefix": "clt-radio-button-group",
+    "body": [
+      "<calcite-radio-button-group layout=\"${1|horizontal,vertical|}\">",
+      "  <calcite-radio-button value=\"${2|Option 1|}\" checked=\"${3|true,false|}\">${4|Option 1|}</calcite-radio-button>",
+      "  <calcite-radio-button value=\"${5|Option 2|}\">${6|Option 2|}</calcite-radio-button>",
+      "</calcite-radio-button-group>"
+    ],
+    "description": "Crea un grupo de botones de opción utilizando calcite-radio-button-group."
+  },
+  "CalciteRating": {
+    "prefix": "clt-rating",
+    "body": [
+      "<calcite-rating value=\"${1|3|}\" count=\"${2|5|}\"></calcite-rating>"
+    ],
+    "description": "Genera un sistema de calificación con el componente calcite-rating."
+  },
+  "CalciteSelect": {
+    "prefix": "clt-select",
+    "body": [
+      "<calcite-select>",
+      "  <calcite-option value=\"${1|Option 1|}\">${2|Option 1|}</calcite-option>",
+      "  <calcite-option value=\"${3|Option 2|}\">${4|Option 2|}</calcite-option>",
+      "</calcite-select>"
+    ],
+    "description": "Genera un menú desplegable con el componente calcite-select."
+  },
+  "CalciteScrim": {
+    "prefix": "clt-scrim",
+    "body": [
+      "<calcite-scrim>${1|Scrim Content|}</calcite-scrim>"
+    ],
+    "description": "Genera un scrim con el componente calcite-scrim."
+  },
+  "CalciteSegmentedControl": {
+    "prefix": "clt-segmented-control",
+    "body": [
+      "<calcite-segmented-control>",
+      "  <calcite-segmented-control-item>${1|Option 1|}</calcite-segmented-control-item>",
+      "  <calcite-segmented-control-item>${2|Option 2|}</calcite-segmented-control-item>",
+      "</calcite-segmented-control>"
+    ],
+    "description": "Crea un control segmentado utilizando el componente calcite-segmented-control."
+  },
+  "CalciteShell": {
+    "prefix": "clt-shell",
+    "body": [
+      "<calcite-shell>",
+      "  <calcite-shell-panel slot=\"primary-panel\">${1|Primary Panel Content|}</calcite-shell-panel>",
+      "  <calcite-shell-panel slot=\"contextual-panel\">${2|Contextual Panel Content|}</calcite-shell-panel>",
+      "</calcite-shell>"
+    ],
+    "description": "Crea una estructura de shell utilizando el componente calcite-shell."
+  },
+  "CalciteSlider": {
+    "prefix": "clt-slider",
+    "body": [
+      "<calcite-slider min=\"${1|0|}\" max=\"${2|100|}\" value=\"${3|50|}\"></calcite-slider>"
+    ],
+    "description": "Genera un control deslizante con el componente calcite-slider."
+  },
+  "CalciteStepper": {
+    "prefix": "clt-stepper",
+    "body": [
+      "<calcite-stepper>",
+      "  <calcite-stepper-item heading=\"${1|Step 1|}\" description=\"${2|Description|}\"></calcite-stepper-item>",
+      "  <calcite-stepper-item heading=\"${3|Step 2|}\" description=\"${4|Description|}\"></calcite-stepper-item>",
+      "</calcite-stepper>"
+    ],
+    "description": "Genera un paso a paso con el componente calcite-stepper."
+  },
+  "CalciteSwitch": {
+    "prefix": "clt-switch",
+    "body": [
+      "<calcite-switch checked=\"${1|true,false|}\">${2|Label|}</calcite-switch>"
+    ],
+    "description": "Genera un interruptor con el componente calcite-switch."
+  },
+  "CalciteTabs": {
+    "prefix": "clt-tabs",
+    "body": [
+      "<calcite-tabs>",
+      "  <calcite-tab-title>${1|Tab 1|}</calcite-tab-title>",
+      "  <calcite-tab>${2|Content for Tab 1|}</calcite-tab>",
+      "  <calcite-tab-title>${3|Tab 2|}</calcite-tab-title>",
+      "  <calcite-tab>${4|Content for Tab 2|}</calcite-tab>",
+      "</calcite-tabs>"
+    ],
+    "description": "Genera un conjunto de pestañas con el componente calcite-tabs."
+  },
+  "CalciteTextArea": {
+    "prefix": "clt-text-area",
+    "body": [
+      "<calcite-text-area label=\"${1|Your Label|}\" placeholder=\"${2|Placeholder text|}\">${3|Text content|}</calcite-text-area>"
+    ],
+    "description": "Crea un área de texto utilizando el componente calcite-text-area."
+  },
+  "CalciteTile": {
+    "prefix": "clt-tile",
+    "body": [
+      "<calcite-tile heading=\"${1|Tile Heading|}\" description=\"${2|Tile Description|}\" icon=\"${3|layer,home,map|}\"></calcite-tile>"
+    ],
+    "description": "Crea un tile utilizando el componente calcite-tile."
+  },
+  "CalciteTileSelect": {
+    "prefix": "clt-tile-select",
+    "body": [
+      "<calcite-tile-select heading=\"${1|Tile Select Heading|}\" description=\"${2|Tile Select Description|}\" input-enabled=\"${3|true,false|}\"></calcite-tile-select>"
+    ],
+    "description": "Genera un tile seleccionable con el componente calcite-tile-select."
+  },
+  "CalciteTileSelectGroup": {
+    "prefix": "clt-tile-select-group",
+    "body": [
+      "<calcite-tile-select-group>",
+      "  <calcite-tile-select heading=\"${1|Tile 1|}\" description=\"${2|Description 1|}\" input-enabled=\"${3|true,false|}\"></calcite-tile-select>",
+      "  <calcite-tile-select heading=\"${4|Tile 2|}\" description=\"${5|Description 2|}\" input-enabled=\"${6|true,false|}\"></calcite-tile-select>",
+      "</calcite-tile-select-group>"
+    ],
+    "description": "Crea un grupo de tiles seleccionables utilizando calcite-tile-select-group."
+  },
+  "CalciteTimePicker": {
+    "prefix": "clt-time-picker",
+    "body": [
+      "<calcite-time-picker value=\"${1|12:00|}\"></calcite-time-picker>"
+    ],
+    "description": "Crea un selector de tiempo utilizando calcite-time-picker."
+  },
+  "CalciteTip": {
+    "prefix": "clt-tip",
+    "body": [
+      "<calcite-tip heading=\"${1|Tip Title|}\" description=\"${2|Tip Description|}\">",
+      "  ${3|Tip content|}",
+      "</calcite-tip>"
+    ],
+    "description": "Genera un consejo con el componente calcite-tip."
+  },
+  "CalciteTooltip": {
+    "prefix": "clt-tooltip",
+    "body": [
+      "<calcite-tooltip reference-element=\"${1|element-id|}\">${2|Tooltip text|}</calcite-tooltip>"
+    ],
+    "description": "Crea un tooltip utilizando el componente calcite-tooltip."
+  },
+  "CalciteTipManager": {
+    "prefix": "clt-tip-manager",
+    "body": [
+      "<calcite-tip-manager>",
+      "  <calcite-tip heading=\"${1|Tip Heading|}\" description=\"${2|Tip Description|}\">",
+      "    ${3|Tip Content|}",
+      "  </calcite-tip>",
+      "</calcite-tip-manager>"
+    ],
+    "description": "Genera un administrador de consejos utilizando calcite-tip-manager."
+  },
+  "CalciteTree": {
+    "prefix": "clt-tree",
+    "body": [
+      "<calcite-tree selection-mode=\"${1|single,multiple|}\">",
+      "  <calcite-tree-item>${2|Item 1|}</calcite-tree-item>",
+      "  <calcite-tree-item>${3|Item 2|}</calcite-tree-item>",
+      "</calcite-tree>"
+    ],
+    "description": "Crea un árbol de navegación utilizando el componente calcite-tree."
+  },
+  "CalciteTreeItem": {
+    "prefix": "clt-tree-item",
+    "body": [
+      "<calcite-tree-item label=\"${1|Tree Item|}\" expanded=\"${2|true,false|}\">",
+      "  ${3|Child content|}",
+      "</calcite-tree-item>"
+    ],
+    "description": "Crea un elemento de árbol utilizando calcite-tree-item."
+  }
+}
