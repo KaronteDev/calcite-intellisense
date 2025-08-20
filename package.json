@@ -1,0 +1,42 @@
+{
+  "name": "calcite-intellisense",
+  "displayName": "Calcite Intellisense",
+  "publisher": "calcite-dev",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "description": "Intellisense y snippets para los componentes de Calcite Design System.",
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu_usuario/calcite-intellisense"
+  },
+  "homepage": "https://github.com/tu_usuario/calcite-intellisense",
+  "bugs": {
+    "url": "https://github.com/tu_usuario/calcite-intellisense/issues"
+  },
+  "keywords": [
+    "calcite",
+    "esri",
+    "components",
+    "html",
+    "intellisense",
+    "snippets"
+  ],
+  "contributes": {
+    "html.customData": [
+      "./custom-data/vscode-data.json"
+    ],
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./.vscode/calcite.code-snippets"
+      }
+    ]
+  }
+}
