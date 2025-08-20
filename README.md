@@ -4,11 +4,11 @@ Esta extensión proporciona autocompletado y sugerencias para los componentes de
 
 ## Instrucciones para instalar localmente
 
-1. Abre Visual Studio Code.
-2. Ejecuta `View -> Command Palette -> Extensions: Install from VSIX...`.
-3. Selecciona el archivo `.vsix` generado o ejecuta desde terminal:
+1.  Abre Visual Studio Code.
+2.  Ejecuta `View -> Command Palette -> Extensions: Install from VSIX...`.
+3.  Selecciona el archivo `.vsix` generado o ejecuta desde terminal:
 
-```bash
+```
 npm install -g vsce
 vsce package
 code --install-extension calcite-intellisense-1.0.0.vsix
@@ -16,5 +16,17 @@ code --install-extension calcite-intellisense-1.0.0.vsix
 
 ## Contenido
 
-- **Snippets:** disponibles para componentes Calcite (`.vscode/calcite.code-snippets`)
-- **Soporte IntelliSense:** atributos, propiedades y documentación (`custom-data/vscode-data.json`)
+*   **Snippets:** disponibles para componentes Calcite (`.vscode/calcite.code-snippets`)
+*   **Soporte IntelliSense:** atributos, propiedades y documentación (`custom-data/vscode-data.json`)
+
+---
+
+## Ejecutar desde el entorno de VS Code.
+
+### Inicia la depuración
+
+1.  Ve a la pestaña "Run and Debug" (Ctrl+Shift+D).
+2.  Elige la configuración llamada "Extensión: Ejecutar".
+3.  Pulsa ▶ "Start Debugging".
+
+Esto abrirá una **nueva ventana de VS Code con tu extensión cargada temporalmente** (modo development host), donde podrás probar los IntelliSense y snippets en archivos .html.
